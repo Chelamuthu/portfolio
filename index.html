@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chellamuthu S — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-ring"></div>
+    <span class="loader-text">CS</span>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#home">
+      <span class="brand-bracket">&lt;</span>CS<span class="brand-bracket">/&gt;</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="hamburger-icon"><span></span><span></span><span></span></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <button id="themeToggle" class="theme-btn ms-3" aria-label="Toggle theme">
+        <i class="fas fa-sun"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero-section">
+  <div id="particles-js"></div>
+  <div class="container h-100">
+    <div class="row align-items-center h-100 min-vh-100">
+      <div class="col-lg-7 hero-content" data-aos="fade-right" data-aos-duration="900">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Chellamuthu S</h1>
+        <div class="hero-subtitle">
+          <span class="typing-prefix">I'm a </span>
+          <span id="typed-text" class="typed-text"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-intro">
+          Final Year CSE student building real-world software — from AI-powered sign language systems to full-stack web apps and race telemetry dashboards. I turn curiosity into code.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary-gradient">
+            <i class="fas fa-code me-2"></i>View Projects
+          </a>
+          <a href="#" class="btn-outline-hero" download>
+            <i class="fas fa-download me-2"></i>Download Resume
+          </a>
+          <a href="#contact" class="btn-outline-hero">
+            <i class="fas fa-envelope me-2"></i>Contact Me
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:chellamuthu@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-5 text-center" data-aos="fade-left" data-aos-duration="900" data-aos-delay="200">
+        <div class="hero-image-wrapper">
+          <div class="hero-image-ring"></div>
+          <div class="hero-image-ring2"></div>
+          <img src="chella.png" alt="Chellamuthu S" class="hero-image" />
+          <div class="hero-badge badge-top"><i class="fas fa-code"></i> Full Stack Dev</div>
+          <div class="hero-badge badge-bottom"><i class="fas fa-brain"></i> AI &amp; ML</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-down-btn"><i class="fas fa-chevron-down"></i></a>
+</section>
+
+<!-- STATS -->
+<section class="stats-section">
+  <div class="container" style="position:relative;z-index:1">
+    <div class="row g-4 text-center">
+      <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="0">
+        <div class="stat-card">
+          <h3 class="stat-number" data-target="6">0</h3>
+          <p class="stat-label">Projects Built</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="stat-card">
+          <h3 class="stat-number" data-target="2">0</h3>
+          <p class="stat-label">Awards Won</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+        <div class="stat-card">
+          <h3 class="stat-number" data-target="20">0</h3>
+          <p class="stat-label">Skills Mastered</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="300">
+        <div class="stat-card">
+          <h3 class="stat-number" data-target="10">0</h3>
+          <p class="stat-label">Events Attended</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ABOUT -->
+<section id="about" class="section-padding" style="position:relative">
+  <div class="glow-orb glow-orb-1"></div>
+  <div class="glow-orb glow-orb-2"></div>
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up">
+      <span class="section-tag">Get to know me</span>
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+    </div>
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5 text-center" data-aos="fade-right">
+        <div class="about-image-wrapper">
+          <img src="chella.png" alt="Chellamuthu S" class="about-image" />
+          <div class="about-exp-badge">
+            <span class="exp-year">Final</span>
+            <span class="exp-label">Year Student</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <h3 class="about-heading">Chellamuthu S</h3>
+        <p class="about-text">I'm a final-year Computer Science and Engineering student at Mount Zion College of Engineering and Technology, Pudukkottai. I'm passionate about solving real-world problems through code — whether that's a sign language recognition model, a full-stack web app, or a live telemetry dashboard for a racing car.</p>
+        <p class="about-text">My interests span <strong>Full Stack Development</strong>, <strong>Artificial Intelligence</strong>, <strong>Machine Learning</strong>, <strong>Large Language Models</strong>, <strong>Computer Vision</strong>, <strong>Embedded Systems</strong>, <strong>IoT</strong>, and <strong>Research &amp; Innovation</strong>.</p>
+        <p class="about-text">Outside academics, I enjoy hackathons, symposiums, and technical events — and I lead the telemetry and innovation efforts for the Zion Racing Team.</p>
+        <div class="info-grid">
+          <div class="info-item"><i class="fas fa-user info-icon"></i><div><span class="info-label">Name</span><span class="info-value">Chellamuthu S</span></div></div>
+          <div class="info-item"><i class="fas fa-map-marker-alt info-icon"></i><div><span class="info-label">Location</span><span class="info-value">Pudukkottai, Tamil Nadu</span></div></div>
+          <div class="info-item"><i class="fas fa-university info-icon"></i><div><span class="info-label">College</span><span class="info-value">Mount Zion College of Engg &amp; Tech</span></div></div>
+          <div class="info-item"><i class="fas fa-laptop-code info-icon"></i><div><span class="info-label">Department</span><span class="info-value">Computer Science &amp; Engineering</span></div></div>
+          <div class="info-item"><i class="fas fa-calendar-alt info-icon"></i><div><span class="info-label">Year</span><span class="info-value">Final Year (4th Year)</span></div></div>
+          <div class="info-item"><i class="fas fa-envelope info-icon"></i><div><span class="info-label">Email</span><span class="info-value">chellamuthu@example.com</span></div></div>
+          <div class="info-item"><i class="fab fa-github info-icon"></i><div><span class="info-label">GitHub</span><span class="info-value">github.com/chellamuthu-s</span></div></div>
+          <div class="info-item"><i class="fab fa-linkedin info-icon"></i><div><span class="info-label">LinkedIn</span><span class="info-value">linkedin.com/in/chellamuthu-s</span></div></div>
+        </div>
+        <div class="mt-4 d-flex gap-3 flex-wrap">
+          <a href="#" class="btn-primary-gradient" download><i class="fas fa-download me-2"></i>Download Resume</a>
+          <a href="#contact" class="btn-outline-hero"><i class="fas fa-envelope me-2"></i>Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- SKILLS -->
+<section id="skills" class="section-padding bg-alt" style="position:relative">
+  <div class="glow-orb glow-orb-1" style="top:-80px;left:auto;right:-80px"></div>
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up">
+      <span class="section-tag">What I know</span>
+      <h2 class="section-title">My <span class="accent">Skills</span></h2>
+    </div>
+
+    <!-- Frontend -->
+    <div class="skill-category mb-5" data-aos="fade-up">
+      <h4 class="skill-cat-title"><i class="fas fa-palette me-2"></i>Frontend</h4>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><i class="fab fa-html5 skill-icon" style="color:#e34f26"></i><p class="skill-name">HTML5</p><div class="skill-bar"><div class="skill-fill" data-width="95"></div></div></div></div>
+        <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><i class="fab fa-css3-alt skill-icon" style="color:#1572b6"></i><p class="skill-name">CSS3</p><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div></div>
+        <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><i class="fab fa-js-square skill-icon" style="color:#f7df1e"></i><p class="skill-name">JavaScript</p><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div></div>
+        <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><i class="fab fa-bootstrap skill-icon" style="color:#7952b3"></i><p class="skill-name">Bootstrap</p><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></div></div>
+        <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><i class="fas fa-code skill-icon" style="color:#0769ad"></i><p class="skill-name">jQuery</p><div class="skill-bar"><div class="skill-fill" data-width="72"></div></div></div></div>
+      </div>
+    </div>
+
+    <!-- Backend -->
+    <div class="skill-category mb-5" data-aos="fade-up" data-aos-delay="100">
+      <h4 class="skill-cat-title"><i class="fas fa-server me-2"></i>Backend</h4>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><i class="fab fa-java skill-icon" style="color:#f89820"></i><p class="skill-name">Java</p><div class="skill-bar"><div class="skill-fill" data-width="82"></div></div></div></div>
+        <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><i class="fab fa-python skill-icon" style="color:#3776ab"></i><p class="skill-name">Python</p><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div></div>
+        <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><i class="fab fa-node-js skill-icon" style="color:#339933"></i><p class="skill-name">Node.js</p><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div></div>
+        <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><i class="fas fa-leaf skill-icon" style="color:#092e20"></i><p class="skill-name">Django</p><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div></div>
+        <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><i class="fas fa-flask skill-icon" style="color:#aaa"></i><p class="skill-name">Flask</p><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div></div>
+      </div>
+    </div>
+
+    <!-- AI / ML -->
+    <div class="skill-category mb-5" data-aos="fade-up" data-aos-delay="150">
+      <h4 class="skill-cat-title"><i class="fas fa-brain me-2"></i>AI &amp; Machine Learning</h4>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><i class="fas fa-eye skill-icon" style="color:#38bdf8"></i><p class="skill-name">OpenCV</p><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div></div>
+        <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><i class="fas fa-database skill-icon" style="color:#818cf8"></i><p class="skill-name">RAG</p><div class="skill-bar"><div class="skill-fill" data-width="78"></div></div></div></div>
+        <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><i class="fas fa-robot skill-icon" style="color:#a78bfa"></i><p class="skill-name">Ollama</p><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div></div>
+        <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><i class="fas fa-fire skill-icon" style="color:#f97316"></i><p class="skill-name">Llama 3</p><div class="skill-bar"><div class="skill-fill" data-width="76"></div></div></div></div>
+        <div class="col-6 col-md-4 col-lg-2"><div class="skill-card"><i class="fas fa-microchip skill-icon" style="color:#10b981"></i><p class="skill-name">LLMs</p><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div></div>
+      </div>
+    </div>
+
+    <!-- DB + Tools -->
+    <div class="row g-4" data-aos="fade-up" data-aos-delay="200">
+      <div class="col-md-6">
+        <div class="skill-category">
+          <h4 class="skill-cat-title"><i class="fas fa-database me-2"></i>Database</h4>
+          <div class="row g-3">
+            <div class="col-6"><div class="skill-card"><i class="fas fa-table skill-icon" style="color:#00758f"></i><p class="skill-name">MySQL</p><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div></div>
+            <div class="col-6"><div class="skill-card"><i class="fas fa-fire-alt skill-icon" style="color:#ffa000"></i><p class="skill-name">Firebase</p><div class="skill-bar"><div class="skill-fill" data-width="72"></div></div></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="skill-category">
+          <h4 class="skill-cat-title"><i class="fas fa-tools me-2"></i>Tools &amp; Mobile</h4>
+          <div class="row g-3">
+            <div class="col-4"><div class="skill-card"><i class="fab fa-git-alt skill-icon" style="color:#f05032"></i><p class="skill-name">Git</p><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></div></div>
+            <div class="col-4"><div class="skill-card"><i class="fab fa-github skill-icon"></i><p class="skill-name">GitHub</p><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div></div>
+            <div class="col-4"><div class="skill-card"><i class="fas fa-mobile-alt skill-icon" style="color:#54c5f8"></i><p class="skill-name">Flutter</p><div class="skill-bar"><div class="skill-fill" data-width="65"></div></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects" class="section-padding" style="position:relative">
+  <div class="glow-orb glow-orb-2" style="bottom:auto;left:auto;top:-60px;right:-60px"></div>
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up">
+      <span class="section-tag">What I've built</span>
+      <h2 class="section-title">My <span class="accent">Projects</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="project-card" onclick="openModal('modal1')">
+          <div class="project-img-wrap"><img src="https://placehold.co/600x360/2563eb/ffffff?text=Timetable+Management" alt="Timetable Management" class="project-img" /><div class="project-overlay"><i class="fas fa-expand"></i></div></div>
+          <div class="project-body"><div class="project-tags"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">JS</span></div><h5 class="project-title">Timetable Management System</h5><p class="project-desc">A web application for managing academic timetables with an intuitive UI and role-based access.</p><div class="project-actions"><button class="proj-btn" onclick="event.stopPropagation();openModal('modal1')"><i class="fas fa-images me-1"></i>Gallery</button><button class="proj-btn" onclick="event.stopPropagation();openModal('modal1')"><i class="fab fa-github me-1"></i>Code</button></div></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-card" onclick="openModal('modal2')">
+          <div class="project-img-wrap"><img src="https://placehold.co/600x360/0f172a/38bdf8?text=Zion+Telemetry" alt="Telemetry" class="project-img" /><div class="project-overlay"><i class="fas fa-expand"></i></div></div>
+          <div class="project-body"><div class="project-tags"><span class="tag">IoT</span><span class="tag">Python</span><span class="tag">Dashboard</span></div><h5 class="project-title">Zion Racing Telemetry System</h5><p class="project-desc">Real-time telemetry monitoring system for racing vehicle data, built for the Zion Racing Team.</p><div class="project-actions"><button class="proj-btn" onclick="event.stopPropagation();openModal('modal2')"><i class="fas fa-images me-1"></i>Gallery</button><button class="proj-btn" onclick="event.stopPropagation();openModal('modal2')"><i class="fas fa-play me-1"></i>Demo</button></div></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-card" onclick="openModal('modal3')">
+          <div class="project-img-wrap"><img src="https://placehold.co/600x360/7c3aed/ffffff?text=Team+Management" alt="Team Mgmt" class="project-img" /><div class="project-overlay"><i class="fas fa-expand"></i></div></div>
+          <div class="project-body"><div class="project-tags"><span class="tag">Full Stack</span><span class="tag">Django</span></div><h5 class="project-title">Zion Racing Team Management</h5><p class="project-desc">A management platform for the Zion Racing Team — members, roles, tasks, and event tracking.</p><div class="project-actions"><button class="proj-btn" onclick="event.stopPropagation();openModal('modal3')"><i class="fas fa-images me-1"></i>Gallery</button><button class="proj-btn" onclick="event.stopPropagation();openModal('modal3')"><i class="fas fa-play me-1"></i>Demo</button></div></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="project-card featured" onclick="openModal('modal4')">
+          <div class="project-img-wrap"><img src="https://placehold.co/600x360/10b981/ffffff?text=Tamil+Sign+Language" alt="Sign Language" class="project-img" /><div class="project-overlay"><i class="fas fa-expand"></i></div><span class="featured-badge">🏆 Award Winner</span></div>
+          <div class="project-body"><div class="project-tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Deep Learning</span></div><h5 class="project-title">Tamil Sign Language Recognition</h5><p class="project-desc">AI-powered system that recognizes Tamil Sign Language in real time using Computer Vision and Deep Learning.</p><div class="project-actions"><button class="proj-btn" onclick="event.stopPropagation();openModal('modal4')"><i class="fas fa-images me-1"></i>Gallery</button><button class="proj-btn" onclick="event.stopPropagation();openModal('modal4')"><i class="fas fa-award me-1"></i>Award</button></div></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-card" onclick="openModal('modal5')">
+          <div class="project-img-wrap"><img src="https://placehold.co/600x360/f97316/ffffff?text=Vehicle+Detection" alt="Vehicle" class="project-img" /><div class="project-overlay"><i class="fas fa-expand"></i></div><span class="mini-badge">Mini Project</span></div>
+          <div class="project-body"><div class="project-tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">CV</span></div><h5 class="project-title">Government Vehicle Detection</h5><p class="project-desc">First-year mini project — Computer Vision system to detect and identify government vehicles from video feeds.</p><div class="project-actions"><button class="proj-btn" onclick="event.stopPropagation();openModal('modal5')"><i class="fas fa-images me-1"></i>Gallery</button><button class="proj-btn" onclick="event.stopPropagation();openModal('modal5')"><i class="fas fa-play me-1"></i>Demo</button></div></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-card" onclick="openModal('modal6')">
+          <div class="project-img-wrap"><img src="https://placehold.co/600x360/dc2626/ffffff?text=Drug+Dispenser" alt="Drug" class="project-img" /><div class="project-overlay"><i class="fas fa-expand"></i></div></div>
+          <div class="project-body"><div class="project-tags"><span class="tag">IoT</span><span class="tag">Embedded</span><span class="tag">Python</span></div><h5 class="project-title">Drug Dispenser</h5><p class="project-desc">Smart automated medicine dispensing system using embedded systems and IoT for accurate, scheduled dispensing.</p><div class="project-actions"><button class="proj-btn" onclick="event.stopPropagation();openModal('modal6')"><i class="fas fa-images me-1"></i>Gallery</button><button class="proj-btn" onclick="event.stopPropagation();openModal('modal6')"><i class="fas fa-play me-1"></i>Demo</button></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT MODALS -->
+<div id="modal1" class="custom-modal-overlay" onclick="closeModal('modal1')"><div class="custom-modal" onclick="event.stopPropagation()"><button class="modal-close" onclick="closeModal('modal1')"><i class="fas fa-times"></i></button><h3 class="modal-title">Timetable Management System</h3><div class="modal-gallery"><img src="mzcet.png" alt="" /><img src="https://placehold.co/800x450/1d4ed8/ffffff?text=Screenshot+2" alt="" /></div><div class="modal-tech"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">MySQL</span></div><p class="modal-desc">A web application for managing academic timetables with role-based access for admins, faculty, and students. Features automated conflict detection and PDF export.</p><div class="modal-links"><a href="#" class="btn-primary-gradient"><i class="fab fa-github me-2"></i>Source Code</a><a href="#" class="btn-outline-hero"><i class="fas fa-award me-2"></i>Certificate</a></div></div></div>
+<div id="modal2" class="custom-modal-overlay" onclick="closeModal('modal2')"><div class="custom-modal" onclick="event.stopPropagation()"><button class="modal-close" onclick="closeModal('modal2')"><i class="fas fa-times"></i></button><h3 class="modal-title">Zion Racing Telemetry System</h3><div class="modal-gallery"><img src="https://placehold.co/800x450/0f172a/38bdf8?text=Telemetry+Dashboard" alt="" /><img src="https://placehold.co/800x450/1e293b/38bdf8?text=Live+Data+Feed" alt="" /></div><div class="modal-tech"><span class="tag">Python</span><span class="tag">IoT</span><span class="tag">Real-time</span><span class="tag">Sensors</span></div><p class="modal-desc">A live telemetry monitoring system for the Zion Racing Team's vehicle — capturing speed, temperature, RPM, and other sensor data in real time on a web dashboard.</p><div class="modal-links"><a href="#" class="btn-primary-gradient"><i class="fab fa-github me-2"></i>Source Code</a><a href="#" class="btn-outline-hero"><i class="fas fa-play me-2"></i>Watch Demo</a></div></div></div>
+<div id="modal3" class="custom-modal-overlay" onclick="closeModal('modal3')"><div class="custom-modal" onclick="event.stopPropagation()"><button class="modal-close" onclick="closeModal('modal3')"><i class="fas fa-times"></i></button><h3 class="modal-title">Zion Racing Team Management System</h3><div class="modal-gallery"><img src="https://placehold.co/800x450/7c3aed/ffffff?text=Team+Dashboard" alt="" /></div><div class="modal-tech"><span class="tag">Django</span><span class="tag">Python</span><span class="tag">Bootstrap</span><span class="tag">MySQL</span></div><p class="modal-desc">A full-featured team management platform for Zion Racing — member profiles, task assignments, event schedules, document management, and role-based access control.</p><div class="modal-links"><a href="#" class="btn-primary-gradient"><i class="fab fa-github me-2"></i>Source Code</a></div></div></div>
+<div id="modal4" class="custom-modal-overlay" onclick="closeModal('modal4')"><div class="custom-modal" onclick="event.stopPropagation()"><button class="modal-close" onclick="closeModal('modal4')"><i class="fas fa-times"></i></button><h3 class="modal-title">Tamil Sign Language Recognition <span class="award-chip">🏆 Novel Solution Award</span></h3><div class="modal-gallery"><img src="https://placehold.co/800x450/10b981/ffffff?text=Sign+Language+Demo" alt="" /></div><div class="modal-tech"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Deep Learning</span><span class="tag">TensorFlow</span></div><p class="modal-desc">An AI-powered real-time Tamil Sign Language Recognition System using Computer Vision and Deep Learning — won the Novel Solution Award. Recognizes Tamil alphabets and words from hand gestures via webcam.</p><div class="modal-links"><a href="#" class="btn-primary-gradient"><i class="fab fa-github me-2"></i>Source Code</a><a href="#" class="btn-outline-hero"><i class="fas fa-award me-2"></i>Certificate</a><a href="#" class="btn-outline-hero"><i class="fas fa-play me-2"></i>Watch Demo</a></div></div></div>
+<div id="modal5" class="custom-modal-overlay" onclick="closeModal('modal5')"><div class="custom-modal" onclick="event.stopPropagation()"><button class="modal-close" onclick="closeModal('modal5')"><i class="fas fa-times"></i></button><h3 class="modal-title">Government Vehicle Detection <span class="mini-chip">Mini Project</span></h3><div class="modal-gallery"><img src="https://placehold.co/800x450/f97316/ffffff?text=Vehicle+Detection+Demo" alt="" /></div><div class="modal-tech"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Computer Vision</span></div><p class="modal-desc">First-year mini project — a Computer Vision-based system to detect and classify government vehicles from video streams using OpenCV and image processing techniques.</p><div class="modal-links"><a href="#" class="btn-primary-gradient"><i class="fab fa-github me-2"></i>Source Code</a></div></div></div>
+<div id="modal6" class="custom-modal-overlay" onclick="closeModal('modal6')"><div class="custom-modal" onclick="event.stopPropagation()"><button class="modal-close" onclick="closeModal('modal6')"><i class="fas fa-times"></i></button><h3 class="modal-title">Drug Dispenser</h3><div class="modal-gallery"><img src="https://placehold.co/800x450/dc2626/ffffff?text=Drug+Dispenser+System" alt="" /></div><div class="modal-tech"><span class="tag">IoT</span><span class="tag">Embedded Systems</span><span class="tag">Arduino</span><span class="tag">Python</span></div><p class="modal-desc">A smart automated medicine dispensing system with scheduled dispensing, patient alerts, and dosage tracking — combining embedded systems, IoT sensors, and a mobile interface.</p><div class="modal-links"><a href="#" class="btn-primary-gradient"><i class="fab fa-github me-2"></i>Source Code</a><a href="#" class="btn-outline-hero"><i class="fas fa-award me-2"></i>Certificate</a></div></div></div>
+
+<div class="section-divider"></div>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section-padding bg-alt" style="position:relative">
+  <div class="glow-orb glow-orb-1" style="bottom:auto;top:-100px;right:-80px;left:auto"></div>
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up">
+      <span class="section-tag">My journey</span>
+      <h2 class="section-title">Experience &amp; <span class="accent">Activities</span></h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"><i class="fas fa-flag-checkered"></i></div>
+        <div class="timeline-card">
+          <div class="timeline-date">2023 – Present</div>
+          <h5 class="timeline-role">Telemetry Head</h5>
+          <p class="timeline-org">Zion Racing Team</p>
+          <p class="timeline-desc">Lead telemetry engineer for the Zion Racing Team. Designed and built the live vehicle data monitoring system, integrating sensors, microcontrollers, and a real-time web dashboard for race-day analysis.</p>
+          <div class="timeline-tags"><span class="tag">IoT</span><span class="tag">Python</span><span class="tag">Data Streaming</span></div>
+        </div>
+      </div>
+      <div class="timeline-item right" data-aos="fade-left">
+        <div class="timeline-dot"><i class="fas fa-lightbulb"></i></div>
+        <div class="timeline-card">
+          <div class="timeline-date">2024 – Present</div>
+          <h5 class="timeline-role">Innovation Lead</h5>
+          <p class="timeline-org">Zion Racing Team</p>
+          <p class="timeline-desc">Driving innovation strategy for the team — identifying new technologies, leading R&amp;D efforts, and representing the team at AIMS Innovation Events. Co-led the project that won Runner-Up for Best Innovation.</p>
+          <div class="timeline-tags"><span class="tag">R&amp;D</span><span class="tag">Leadership</span><span class="tag">Innovation</span></div>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"><i class="fas fa-code"></i></div>
+        <div class="timeline-card">
+          <div class="timeline-date">2022 – Present</div>
+          <h5 class="timeline-role">Full Stack Developer</h5>
+          <p class="timeline-org">Academic &amp; Personal Projects</p>
+          <p class="timeline-desc">Built multiple full-stack applications including the Timetable Management System, Team Management Platform, and AI-powered tools — using Django, Node.js, PHP, MySQL, and Bootstrap.</p>
+          <div class="timeline-tags"><span class="tag">Django</span><span class="tag">Node.js</span><span class="tag">MySQL</span></div>
+        </div>
+      </div>
+      <div class="timeline-item right" data-aos="fade-left">
+        <div class="timeline-dot"><i class="fas fa-brain"></i></div>
+        <div class="timeline-card">
+          <div class="timeline-date">2023 – Present</div>
+          <h5 class="timeline-role">AI / ML Researcher</h5>
+          <p class="timeline-org">Research &amp; Innovation Projects</p>
+          <p class="timeline-desc">Built AI systems including Tamil Sign Language Recognition (award-winning), Government Vehicle Detection, and LLM-powered chatbots using RAG, Ollama, and Llama 3.</p>
+          <div class="timeline-tags"><span class="tag">OpenCV</span><span class="tag">Deep Learning</span><span class="tag">LLMs</span></div>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"><i class="fas fa-users"></i></div>
+        <div class="timeline-card">
+          <div class="timeline-date">2022 – Present</div>
+          <h5 class="timeline-role">Active Participant</h5>
+          <p class="timeline-org">Hackathons, Symposiums &amp; Workshops</p>
+          <p class="timeline-desc">Actively participated in numerous hackathons, technical symposiums, paper presentations, project expos, and innovation workshops — consistently building, learning, and competing.</p>
+          <div class="timeline-tags"><span class="tag">Hackathons</span><span class="tag">Paper Presentations</span><span class="tag">Project Expo</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="section-padding" style="position:relative">
+  <div class="glow-orb glow-orb-2" style="bottom:-80px;left:-80px;right:auto;top:auto"></div>
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up">
+      <span class="section-tag">Recognition</span>
+      <h2 class="section-title">Awards &amp; <span class="accent">Achievements</span></h2>
+    </div>
+    <div class="row g-4 mb-5">
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="award-card gold">
+          <div class="award-icon-wrap"><i class="fas fa-trophy award-icon"></i></div>
+          <div class="award-body">
+            <span class="award-badge gold-badge">🥇 Novel Solution Award</span>
+            <h5 class="award-title">Tamil Sign Language Recognition</h5>
+            <p class="award-desc">Won the Novel Solution Award for developing an AI-powered Tamil Sign Language Recognition System — recognized for its real-world social impact and technical innovation in Computer Vision and Deep Learning.</p>
+            <div class="award-cert"><img src="https://placehold.co/400x280/10b981/ffffff?text=Certificate+Placeholder" alt="Certificate" class="cert-img" /></div>
+            <div class="award-tags"><span class="tag">Computer Vision</span><span class="tag">Deep Learning</span><span class="tag">Innovation</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="award-card silver">
+          <div class="award-icon-wrap silver-icon"><i class="fas fa-medal award-icon"></i></div>
+          <div class="award-body">
+            <span class="award-badge silver-badge">🥈 Runner Up — AIMS Innovation Event</span>
+            <h5 class="award-title">Zion Racing Team Innovation</h5>
+            <p class="award-desc">Received Runner-Up for Best Innovation at the AIMS Event as Telemetry Head and Innovation Lead of the Zion Racing Team, recognized for innovative engineering and technical excellence.</p>
+            <div class="award-cert"><img src="https://placehold.co/400x280/38bdf8/0f172a?text=Certificate+Placeholder" alt="Certificate" class="cert-img" /></div>
+            <div class="award-tags"><span class="tag">Telemetry</span><span class="tag">Innovation</span><span class="tag">AIMS</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-header text-center" data-aos="fade-up">
+      <h3 class="section-title" style="font-size:1.8rem">Participation &amp; <span class="accent">Certificates</span></h3>
+      <p class="mt-2" style="color:var(--text-muted)">Participated in numerous symposiums, hackathons, workshops, paper presentations, and project expos.</p>
+    </div>
+    <div class="cert-masonry row g-3" data-aos="fade-up">
+      <div class="col-6 col-md-4 col-lg-3"><div class="cert-card" onclick="openCert(this)"><img src="https://placehold.co/400x300/2563eb/ffffff?text=Symposium" alt="" /><div class="cert-label">Technical Symposium</div></div></div>
+      <div class="col-6 col-md-4 col-lg-3"><div class="cert-card" onclick="openCert(this)"><img src="https://placehold.co/400x300/7c3aed/ffffff?text=Hackathon" alt="" /><div class="cert-label">Hackathon Participation</div></div></div>
+      <div class="col-6 col-md-4 col-lg-3"><div class="cert-card" onclick="openCert(this)"><img src="https://placehold.co/400x300/0f172a/38bdf8?text=Workshop" alt="" /><div class="cert-label">Technical Workshop</div></div></div>
+      <div class="col-6 col-md-4 col-lg-3"><div class="cert-card" onclick="openCert(this)"><img src="https://placehold.co/400x300/10b981/ffffff?text=Paper+Presentation" alt="" /><div class="cert-label">Paper Presentation</div></div></div>
+      <div class="col-6 col-md-4 col-lg-3"><div class="cert-card" onclick="openCert(this)"><img src="https://placehold.co/400x300/f97316/ffffff?text=Project+Expo" alt="" /><div class="cert-label">Project Expo</div></div></div>
+      <div class="col-6 col-md-4 col-lg-3"><div class="cert-card" onclick="openCert(this)"><img src="https://placehold.co/400x300/dc2626/ffffff?text=Innovation+Event" alt="" /><div class="cert-label">Innovation Event</div></div></div>
+      <div class="col-6 col-md-4 col-lg-3"><div class="cert-card" onclick="openCert(this)"><img src="https://placehold.co/400x300/0369a1/ffffff?text=Online+Course" alt="" /><div class="cert-label">Online Course</div></div></div>
+      <div class="col-6 col-md-4 col-lg-3"><div class="cert-card" onclick="openCert(this)"><img src="https://placehold.co/400x300/4f46e5/ffffff?text=Webinar" alt="" /><div class="cert-label">Webinar</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CERT LIGHTBOX -->
+<div id="certLightbox" class="cert-lightbox" onclick="closeCert()">
+  <img id="certLightboxImg" src="" alt="Certificate" />
+  <button class="cert-close" onclick="closeCert()"><i class="fas fa-times"></i></button>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- CONTACT -->
+<section id="contact" class="section-padding bg-alt" style="position:relative">
+  <div class="glow-orb glow-orb-1" style="top:auto;bottom:-80px;right:-80px;left:auto"></div>
+  <div class="container">
+    <div class="section-header text-center" data-aos="fade-up">
+      <span class="section-tag">Let's talk</span>
+      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+    </div>
+    <div class="row g-5">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="contact-info">
+          <h4 class="contact-info-title">Contact Info</h4>
+          <div class="contact-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div><p class="contact-label">Email</p><a href="mailto:chellamuthu@example.com" class="contact-value">chellamuthu@example.com</a></div></div>
+          <div class="contact-item"><div class="contact-icon"><i class="fas fa-phone"></i></div><div><p class="contact-label">Phone</p><a href="tel:+91XXXXXXXXXX" class="contact-value">+91 XXXXX XXXXX</a></div></div>
+          <div class="contact-item"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><div><p class="contact-label">Location</p><span class="contact-value">Pudukkottai, Tamil Nadu, India</span></div></div>
+          <div class="contact-item"><div class="contact-icon"><i class="fab fa-github"></i></div><div><p class="contact-label">GitHub</p><a href="#" class="contact-value">github.com/chellamuthu-s</a></div></div>
+          <div class="contact-item"><div class="contact-icon"><i class="fab fa-linkedin"></i></div><div><p class="contact-label">LinkedIn</p><a href="#" class="contact-value">linkedin.com/in/chellamuthu-s</a></div></div>
+          <div class="map-embed mt-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125314.32099455!2d78.7469!3d10.3797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00ce9b0a5d8e27%3A0x4e3a82d7e5c68a03!2sPudukkottai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000" width="100%" height="220" style="border:0;border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <form class="contact-form" id="contactForm">
+          <div class="row g-3">
+            <div class="col-md-6"><label class="form-label">Your Name</label><input type="text" class="form-control contact-input" placeholder="John Doe" required /></div>
+            <div class="col-md-6"><label class="form-label">Email Address</label><input type="email" class="form-control contact-input" placeholder="john@example.com" required /></div>
+            <div class="col-12"><label class="form-label">Subject</label><input type="text" class="form-control contact-input" placeholder="Project Collaboration" required /></div>
+            <div class="col-12"><label class="form-label">Message</label><textarea class="form-control contact-input" rows="6" placeholder="Hello Chellamuthu, I'd like to discuss…" required></textarea></div>
+            <div class="col-12"><button type="submit" class="btn-primary-gradient w-100" id="sendBtn"><i class="fas fa-paper-plane me-2"></i>Send Message</button></div>
+          </div>
+        </form>
+        <div id="formSuccess" class="form-success" style="display:none">
+          <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand"><span class="brand-bracket">&lt;</span>CS<span class="brand-bracket">/&gt;</span></div>
+      <p class="footer-copy">© 2026 Chellamuthu S. Made with <span class="heart">❤️</span> using HTML, CSS, Bootstrap &amp; JavaScript.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:chellamuthu@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="scrollTop" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
